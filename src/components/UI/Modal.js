@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import ReactDOM from 'react-dom'
-import styles from './Model.module.css'
+import styles from './Modal.module.css'
 
 const Backdrop = (props) => {
     return (
