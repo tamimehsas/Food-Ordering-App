@@ -4,7 +4,7 @@ import Modal from '../UI/Modal'
 
 export default function Cart(props) {
     const cartItems = <ul className={styles['cart-items']}>
-        {[{ id: 'c1', name: 'sushi', price: 12.99 }].map(item => <li>{item.name}</li>)}</ul>
+        {[{ id: 'c1', name: 'sushi', price: 12.99 }].map(item => <li key={item.id}>{item.name}</li>)}</ul>
     return (
         <Modal onClose={props.onClose}>
             {cartItems}
