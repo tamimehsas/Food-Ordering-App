@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './AvailableMeals.module.css'
 
 const DUMMY_MEALS = [
     {
@@ -27,7 +28,12 @@ const DUMMY_MEALS = [
     },
 ];
 export default function AvailableMeals() {
+    const mealsList = DUMMY_MEALS.map(meal => <li>{meal.name}</li>)
     return (
-        <div>AvailableMeals</div>
+        <section className={styles.meals}>
+            <ul>
+                {mealsList}
+            </ul>
+        </section>
     )
 }
