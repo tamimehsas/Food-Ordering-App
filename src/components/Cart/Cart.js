@@ -13,7 +13,7 @@ export default function Cart(props) {
                 <span>35.7</span>
             </div>
             <div className={styles.actions}>
-                <button className={styles['button--alt']}>Close</button>
+                <button className={styles['button--alt']} onClick={props.onClose}>Close</button>
                 <button className={styles.button}>Order</button>
 
             </div>
